@@ -1,5 +1,5 @@
 from pydantic import BaseModel, constr
-
+# validation of fields
 class PostCreate(BaseModel):
     text: constr(max_length=1000)
 

@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr, constr
-
+#validation of fields
 class UserCreate(BaseModel):
     email: EmailStr
     password: constr(min_length=6)
